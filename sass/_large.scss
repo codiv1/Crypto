@@ -115,4 +115,8 @@
             background-image: url("../img/header1240.jpg");
         }
     }
+
+    .gallery{
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
