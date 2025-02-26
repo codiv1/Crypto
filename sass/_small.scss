@@ -1,0 +1,9 @@
+@media (min-width: 576px) {
+	.info {
+		grid-template-areas:
+			" title title"
+			" box box"
+			" box box";
+		padding: 10em 2em;
+	}
+}
