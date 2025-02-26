@@ -110,7 +110,7 @@ h1.company-name {
 		transition: color .3s;
 
 		&:hover{
-			color: $darkcolor;
+			color: $dark;
 		}
 	}
 
@@ -119,6 +119,7 @@ h1.company-name {
 	}
 
 }
+
 
 //HEADER
 
@@ -129,6 +130,7 @@ h1.company-name {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
 
 	&__text {
 		display: grid;
@@ -183,7 +185,7 @@ h1.company-name {
 	}
 }
 .hamburger {
-	position: absolute;
+	position: fixed;
 	top: 3em;
 	left: 1em;
 	transform: tranbslateY(-50%);
@@ -198,7 +200,7 @@ h1.company-name {
 
 .nav {
 	&-mobile {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -317,6 +319,89 @@ h1.company-name {
 			grid-row: 3/4;
 			grid-column: 1/-1;
 		}
+	}
+}
+
+
+//plans
+
+.plans{
+	padding: 6em 2em;
+	background-color: $darker;
+
+	&__box{
+		margin: 1em 0;
+		padding: 2em 1em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: $dark;
+		transition: background-color .3s, border .3s;
+		cursor: pointer;
+
+		&:hover{
+			background-color: $darker;
+			border: 1px solid $gold;
+		}
+	}
+
+	&__item{
+		margin: 1em 0;
+	}
+
+	&__item-icon{
+		width: 50px;
+	}
+
+	&__item-name{
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: $gold;
+	}
+
+}
+
+//newsletter
+
+.newsletter{
+	padding: 8em 2em;
+	background-color: $red;
+	text-align: center;
+
+	&__text{
+		padding: 1em;
+		margin-bottom: 1em;
+		font-size: 4rem;
+		font-weight: 200;
+	}
+
+	&__form{
+
+		input{
+			margin-bottom: 1em;
+			padding: 1em;
+			width: 100%;
+			background-color: $white;
+			border: 1px solid transparent;
+		}
+
+		button{
+			padding: 1em;
+			border: 1px solid $gold;
+			background-color: transparent;
+			color: $gold;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color .3s, color .3s;
+
+			&:hover{
+				color: $red;
+				background-color: $gold;
+			}
+		}
+
+
 	}
 }
 

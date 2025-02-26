@@ -1,1 +1,1 @@
-https://github.com/Olxf/Crypto.git
+https://olxf.github.io/Crypto/
